@@ -1,5 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, MessageCircle, Shield, Smartphone, Crown, Package, Rss } from "lucide-react";
+import {
+  Check,
+  MessageCircle,
+  Shield,
+  Smartphone,
+  Crown,
+  Package,
+  Rss, Lock
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
@@ -38,6 +46,10 @@ export const PricingSection = () => (
             <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 text-right">
               <li className="flex items-center gap-3">
                 <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
+                <span>3 مواقع (أكاديميات)</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
                 <span>عدد لا محدود من الدورات</span>
               </li>
               <li className="flex items-center gap-3">
@@ -55,9 +67,14 @@ export const PricingSection = () => (
               <li className="flex items-center gap-3">
                 <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
                 <span>نطاق فرعي مجاني</span>
-              </li>              <li className="flex items-center gap-3">
+              </li>
+              <li className="flex items-center gap-3">
                 <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
                 <span>ربط نطاقك الخاص</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Lock className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
+                <span>شهادة SSL مجانية</span>
               </li>
               <li className="flex items-center gap-3">
                 <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
@@ -65,7 +82,7 @@ export const PricingSection = () => (
               </li>
               <li className="flex items-center gap-3">
                 <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
-                <span>دعم فني عبر البريد الإلكتروني</span>
+                <span>مساحة تخزين غير محدودة</span>
               </li>
             </ul>
             <Button asChild className="w-full" variant="outline" size="lg">
@@ -97,14 +114,14 @@ export const PricingSection = () => (
               </p>
               <div className="flex items-center justify-center gap-1 mb-2">
                 <span className="text-4xl sm:text-5xl font-bold text-blue-600">
-                  $100
+                  $150
                 </span>
                 <span className="text-lg text-gray-600">/سنوياً</span>
               </div>
               <div className="flex items-center justify-center gap-2 text-sm text-green-600">
                 <span className="line-through text-gray-400">$228</span>
                 <Badge className="bg-green-100 text-green-700 text-xs">
-                  توفير 56%
+                  وفّر 78$ عند الاشتراك السنوي
                 </Badge>
               </div>
             </div>
@@ -112,12 +129,6 @@ export const PricingSection = () => (
               <li className="flex items-center gap-3">
                 <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
                 <span>كل مزايا الخطة الشهرية، بالإضافة إلى:</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
-                <span className="font-semibold text-blue-600">
-                  نطاق .com مجاني للعام الأول
-                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 flex-shrink-0" />
@@ -163,7 +174,8 @@ export const PricingSection = () => (
             🎁 عرض حصري للخطة السنوية
           </h4>
           <p className="text-blue-700">
-            اشترك سنوياً واحصل على نطاق .com مجاني (بقيمة 15$)، ووفر أكثر من نصف التكلفة السنوية!
+            اشترك سنوياً واحصل على خصم 50% علي صانع التطبيقات والمميزات المستقبلية (بقيمة 500$)، ووفر أكثر من نصف
+            التكلفة السنوية!
           </p>
         </div>
 

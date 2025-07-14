@@ -2,15 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   compiler: {
-    styledComponents: true,
+    removeConsole: process.env.NODE_ENV === "production",
   },
+  devIndicators: false,
   experimental: {
     cssChunking: true,
     inlineCss: true,
-    staleTimes: {
-      dynamic: 30,
-      static: 180,
-    },
   },
 };
 

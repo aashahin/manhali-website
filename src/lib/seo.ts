@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
-const title = "مَنهلي: أنشئ موقعك التعليمي لبيع الدورات أونلاين";
+const title = "منهلي: أنشئ موقعك التعليمي لبيع الدورات أونلاين";
 const description =
-  "مَنهلي هي منصة عربية متكاملة تمنحك كل الأدوات لإنشاء موقعك التعليمي الاحترافي وبيع دوراتك أونلاين. ابدأ اليوم بتحويل خبرتك إلى مشروع مربح بدون أي خبرة برمجية.";
+  "منهلي هي منصة عربية متكاملة تمنحك كل الأدوات لإنشاء موقعك التعليمي الاحترافي وبيع دوراتك أونلاين. ابدأ اليوم بتحويل خبرتك إلى مشروع مربح بدون أي خبرة برمجية.";
 const domain = "manhali.com";
 
 export const websiteMetadata: Metadata = {
@@ -14,7 +14,7 @@ export const websiteMetadata: Metadata = {
       url: "https://abdelrahman.co",
     },
   ],
-  applicationName: "مَنهلي",
+  applicationName: "منهلي",
   category: "Education",
   keywords: [
     "منصة تعليمية",
@@ -27,13 +27,20 @@ export const websiteMetadata: Metadata = {
     "منصة SaaS عربية",
     "بيع المحتوى الرقمي",
     "بديل مساق",
-    "teachable عربي"
+    "teachable عربي",
+    "منصة تعليمية عربية",
+    "منصة دورات عربية",
+    "مَنهلي",
+    "منصة منهلي",
+    "منصة تعليمية لبيع الدورات",
+    "udemy عربي",
   ],
   openGraph: {
+    type: "website",
     title,
     description,
     url: `https://${domain}`,
-    siteName: "مَنهلي",
+    siteName: "منهلي",
     images: [
       {
         url: `https://${domain}/og-image.png`,
