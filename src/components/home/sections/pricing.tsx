@@ -161,7 +161,7 @@ export const PricingSection = () => (
               </Link>
             </Button>
             <p className="text-xs text-gray-500 mt-3 sm:mt-4">
-              يشمل تجربة 3 أيام مجانية + نطاق مجاني
+              يشمل تجربة 3 أيام مجانية
             </p>
           </CardContent>
         </Card>
