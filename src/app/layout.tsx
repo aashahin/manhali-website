@@ -4,6 +4,7 @@ import { websiteMetadata } from "@/lib/seo";
 import "./globals.css";
 import { Footer } from "@/components/home/footer";
 import { Header } from "@/components/home/header";
+import Head from "next/head";
 
 const fontSans = IBM_Plex_Sans_Arabic({
   variable: "--font-sans",
@@ -27,6 +28,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
+      <Head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17384516451"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17384516451');
+          `,
+          }}
+        />
+      </Head>
       <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
         <div className="flex flex-col min-h-screen bg-white">
           {/* Header */}
