@@ -68,7 +68,10 @@ export const HeroSection = () => (
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg text-base md:text-lg font-semibold rounded-xl w-full sm:w-auto min-h-[48px] transition-all duration-200"
           >
-            <Link href={"https://dash.manhali.com/auth/signup"} className="flex items-center max-w-fit">
+            <Link
+              href={"https://dash.manhali.com/auth/signup"}
+              className="flex items-center max-w-fit"
+            >
               ابدأ مجاناً الآن
               <ArrowLeft
                 className="mr-2 md:mr-3 h-4 w-4 md:h-5 md:w-5"
@@ -81,11 +84,16 @@ export const HeroSection = () => (
             size="lg"
             className="border-2 border-gray-200 hover:border-blue-300 hover:bg-blue-50 px-6 md:px-10 py-4 text-base md:text-lg font-semibold rounded-xl w-full sm:w-auto min-h-[48px] transition-all duration-200"
           >
-            <Play
-              className="ml-2 md:ml-3 h-4 w-4 md:h-5 md:w-5"
-              aria-hidden="true"
-            />
-            شاهد العرض التوضيحي
+            <Link
+              href={"https://www.youtube.com/watch?v=N31kTo1tiPc"}
+              className="flex items-center max-w-fit"
+            >
+              <Play
+                className="ml-2 md:ml-3 h-4 w-4 md:h-5 md:w-5"
+                aria-hidden="true"
+              />
+              شاهد العرض التوضيحي
+            </Link>
           </Button>
         </div>
 
